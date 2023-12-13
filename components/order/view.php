@@ -21,17 +21,17 @@ $res = mysqli_query($connection, $ReadSql);
 
 	<div class="container-fluid my-4">
 		<div class="row my-2">
-			<h2>Elite Fashion - Rentals</h2>	
+			<h2>Sovlo Fashion - Rentals</h2>	
 		</div>
 		<table class="table "> 
 		<thead> 
 			<tr> 
 				<th>Order No.</th> 
-				<th>Product Id</th> 
 				<th>Product Name</th> 
 				<th>Customer Id</th> 
 				<th>Ordered By</th> 
-				<th>Quantity</th> 
+				<th>Days</th> 
+				<th>Total Price</th> 
 				<th>User Contact</th> 
 				<th>Delivery Address</th> 
 				<th>Action</th>
@@ -43,11 +43,11 @@ $res = mysqli_query($connection, $ReadSql);
 		?>
 			<tr> 
 				<th scope="row"><?php echo $r['id']; ?></th> 
-				<td><?php echo $r['p_id']; ?></td> 
 				<td><?php echo $r['p_name']; ?></td> 
 				<td><?php echo $r['u_id']; ?></td> 
 				<td><?php echo $r['u_name']; ?></td> 
 				<td><?php echo $r['quantity']; ?></td>
+				<td>IDR <?php echo number_format($r['total_price'],0,',','.'); ?></td> 
 				<td><?php echo $r['u_contact']; ?></td>
 				<td><?php echo $r['u_address']; ?></td> 
 				<td>

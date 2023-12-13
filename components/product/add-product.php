@@ -33,7 +33,6 @@ if(isset($_POST) & !empty($_POST)){
 		header('location: view-product.php');
 	}else{
 		$fmsg = "Failed to Insert data.";
-		print_r($res->error_list);
 	}
 }
 ?>

@@ -13,14 +13,17 @@ session_start();
 if(isset($_POST) & !empty($_POST)){
 	$p_id = ($_POST['p_id']);
 	$p_name = ($_POST['p_name']);
+	$p_price = ($_POST['p_price']);
 	$u_id = ($_POST['u_id']);
 	$u_name = ($_POST['u_name']);
 	$quantity = ($_POST['quantity']);
 	$phone = ($_POST['phone']);
 	$address = ($_POST['address']);
 
-	$CreateSql = "INSERT INTO `orders` (p_id, p_name, u_id, u_name, quantity, u_contact, u_address) VALUES 
-    ('$p_id', '$p_name', '$u_id', '$u_name', '$quantity', '$phone', '$address')";
+	$total_price = $p_price * $quantity;
+
+	$CreateSql = "INSERT INTO `orders` (p_id, p_name, u_id, u_name, quantity, u_contact, u_address, total_price) VALUES 
+    ('$p_id', '$p_name', '$u_id', '$u_name', '$quantity', '$phone', '$address', '$total_price')";
 	$res = mysqli_query($connection, $CreateSql) or die(mysqli_error($connection));
 	if($res){
 		$smsg = "Order Successful.";
