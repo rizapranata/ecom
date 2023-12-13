@@ -21,7 +21,7 @@ $res = mysqli_query($connection, $ReadSql);
 
 	<div class="container-fluid my-4">
 		<div class="row my-2">
-			<h2>Elite Fashion - Orders</h2>	
+			<h2>Elite Fashion - Rentals</h2>	
 		</div>
 		<table class="table "> 
 		<thead> 
@@ -95,5 +95,3 @@ $res = mysqli_query($connection, $ReadSql);
     <button type="button" data-dismiss="modal" class="btn">Cancel</button>
   </div>
 </div>
-
-<?php require($path . 'templates/footer.php') ?>

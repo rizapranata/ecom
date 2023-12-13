@@ -111,5 +111,3 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Forgot Password? <a href="reset-password.php">Reset Password</a>.</p>
         </form>
     </div>    
-
-<?php require('templates/footer.php') ?>

@@ -6,7 +6,7 @@ $server = 'http://' . $_SERVER['SERVER_NAME'] . '/ecom/';
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Online Clothing Shop</title>
+	<title>Online Clothing Rent</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -32,7 +32,7 @@ $server = 'http://' . $_SERVER['SERVER_NAME'] . '/ecom/';
 					<a class="nav-link" href="<?php echo $server; ?>index.php"><i class="fa fa-shopping-bag text-white"></i> Shop</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?php echo $server; ?>components/order/view.php">Orders</a>
+					<a class="nav-link" href="<?php echo $server; ?>components/order/view.php">Rentals</a>
 				</li>
 				<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true && $_SESSION['role'] == 'admin') {
 					?>

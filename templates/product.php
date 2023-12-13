@@ -14,15 +14,16 @@
 			<input type="text" name="u_id" value="<?php echo $_SESSION['id']; ?>" hidden="hidden" />
 			<input type="text" name="u_name" value="<?php echo $_SESSION['username']; ?>" hidden="hidden" />
 			<div class="d-flex mb-2">
-				<label for="qty<?php echo $r['id']; ?>">Quantity</label>
+				<label for="qty<?php echo $r['id']; ?>">Long rental</label>
 				<input type="number" id="qty<?php echo $r['id']; ?>" name="quantity" class="mx-2" value="1" />
+				<label for="qty<?php echo $r['id']; ?>">days</label>
 			</div>
 
 
 
 			<!-- Button trigger modal -->
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmOrder">
-				<span class="text-white"><i class="fa fa-shopping-cart text-white"></i> Buy</span>
+				<span class="text-white"><i class="fa fa-shopping-cart text-white"></i> Rent</span>
 			</button>
 
 			<!-- Modal -->
