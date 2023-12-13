@@ -5,7 +5,6 @@
 		<h4 class="card-title"><?php echo $r['name']; ?></h4>
 		<p class="card-text"><?php echo $r['detail']; ?></p>
 		<h6>IDR <?php echo number_format($r['price'],0,',','.'); ?> / day</h6>
-		<hr>
 
 		<div class="accordion" id="accordionExample">
 			<div class="card">
